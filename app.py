@@ -2,9 +2,7 @@ import numpy as np
 from flask import Flask, jsonify, request, render_template
 from flask_cors import CORS, cross_origin
 import pickle
-import json
-from keras.models import model_from_json
-from keras.models import load_model
+
 
 
 app = Flask(__name__)
