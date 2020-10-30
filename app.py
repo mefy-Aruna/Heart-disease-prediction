@@ -10,7 +10,7 @@ from keras.models import load_model
 app = Flask(__name__)
 cors = CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
-model = pickle.load(open('rf.pkl', 'rb'))
+model = pickle.load(open('RF.pkl', 'rb'))
 #json_file = open('model.json', 'r')
 
 #loaded_model_json = json_file.read()
