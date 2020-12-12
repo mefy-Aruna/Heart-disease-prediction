@@ -1020,37 +1020,39 @@
 					<h2 class="pt-md-4 txtGray px-2">Heart Disease Diagnosis</h2> </div>
 				<div class="col-sm-6 pt-lg-5">
 					<form class="pl-lg-5 ml-lg-5 py-sm-0 py-4" action="{{ url_for('predict')}}" method="post" >
-						<div class="form-group">
-							<input type="text" class="form-control" name="AGE" placeholder="AGE" required /> </div>
-						<div class="form-group">
+
 							<!-- <label class="text-white">I am a</label> -->
 							<select id="sex" name="SESSO" class="form-control">
 								<option value="0"> Male </option>
 								<option value="1"> Female </option>
 							</select>
 						</div>
-
 						<div class="form-group">
-							<input type="text" name="Chest Pain Type" class="form-control" placeholder="Chest Pain Type" required/> </div>
+							<input type="text" class="form-control" name="AGE" placeholder="AGE" required /> </div>
 						<div class="form-group">
-							<input type="text" name="BP" class="form-control" placeholder="BP" required/>
+						<div class="form-group">
+							<input type="text" name="Current Smoker" class="form-control" placeholder="Current Smoker" required/> </div>
+						<div class="form-group">
+							<input type="text" name="BPmeds" class="form-control" placeholder="BPmeds" required/>
 						</div>
 						<div class="form-group">
-							<input type="text" name="chol" class="form-control" placeholder="chol" required/>
+							<input type="text" name="prevalent hypertension" class="form-control" placeholder="prevalent hypertension" required/>
 						</div>
 						<div class="form-group">
-							<input type="text" name="fbs" class="form-control" placeholder="fbs" required/>
+							<input type="text" name="diabetes" class="form-control" placeholder="diabetes" required/>
 						</div>
 						<div class="form-group">
-							<input type="text" name="EKG" class="form-control" placeholder="EKG" required /> </div>
+							<input type="text" name="total chol" class="form-control" placeholder="total chol" required /> </div>
 						<div class="form-group">
-							<input type="text" name="Hr " class="form-control" placeholder="HR" required /> </div>
+							<input type="text" name="sysBP " class="form-control" placeholder="sysBP" required /> </div>
 						<div class="form-group">
-							<input type="text" name="angina" class="form-control" placeholder="angina" required/> </div>
+							<input type="text" name="diaBP" class="form-control" placeholder="diaBP" required/> </div>
 						<div class="form-group">
-							<input type="text" name="depre" class="form-control" placeholder="depre" required /> </div>
+							<input type="text" name="BMI" class="form-control" placeholder="BMI" required /> </div>
 						<div class="form-group">
-							<input type="text" name="slope" class="form-control" placeholder="slope" required /> </div>
+							<input type="text" name="HR" class="form-control" placeholder="HR" required /> </div>
+						<div class="form-group">
+							<input type="text" name="glucose" class="form-control" placeholder="glucose" required /> </div>
 
 							<button type="submit" class="btn btn-primary">Predict </button>
 							
